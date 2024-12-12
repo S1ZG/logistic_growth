@@ -1,6 +1,6 @@
 #Script to plot data and model
 
-growth_data <- read.csv("???")
+growth_data <- read.csv("experiment.csv")
 
 logistic_fun <- function(t) {
   
@@ -10,18 +10,18 @@ logistic_fun <- function(t) {
   
 }
 
-N0 <- ??? #
-  
-r <- ??? #
-  
-K <- ??? #
+N0 <- exp(6.8941709) #log transformed initial population size
 
-ggplot(aes(???,???), data = growth_data) +
+r <- 0.0100086 #log transformed growth rate
+
+K <- 5.993e+10 #log transformed carrying capacity
+
+ggplot(aes(t,N), data = growth_data) +
   
   geom_function(fun=logistic_fun, colour="red") +
   
-  geom_point()
-
-  #scale_y_continuous(trans='log10')
+  geom_point() +
+  
+  scale_y_continuous(trans='log10')
 
 
