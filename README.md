@@ -50,7 +50,7 @@ $`K`$ = 5.993e+10
 - Using model 2, finding the intercept of the line gives us the carrying capacity as it is when the population has plateaued after population growth.
 </p>
 
-### plot_data_and_model.R
+## plot_data_and_model.R
 Then assessed the fit of the model to the data graphically. Used the parameter estimates from the linear approximations to plot a logistic growth model which is the red curve. Assessed the fit of this to the growth data from ‘experiment.csv’ which is plotted in black dots. Can see that there is a very close fit between the model and the observed data, suggesting the parameter estimates are appropriate to use to describe this population of *E. coli*. 
 <p align="center">
 <img src="https://github.com/S1ZG/logistic_growth/blob/main/Q1_plot_3.png" width="754.6" height="709.8">
@@ -75,6 +75,10 @@ N(4980) = \frac{(5.993×10^{10})(986.507)(e^{0.0100086*4980})}{(5.993×10^{10})-
 \end{equation}
 ```
 The population size from the exponential growth equation is much greater than that from the logistic model equation because the exponential growth equation assumes the rate of population growth remains constant over time, so the population increases indefinitely, while the logistic model includes carrying capacity, where the population stops increasing and plateaus because of resource limitations and competition. This is visualised in the next question.
+
+When estimating the population size at $`t`$ = 4980 min with the logistic model we get the same value as what was calculated as an estimate for the carrying capacity. This is expected as at $`t`$ = 4980 is after $`t`$ = 2100 which is when we can see on the graph that carrying capacity has been reached.
+</p> 
+
 
 ## Question 3
 As we are using the same parameters, I am visualising the exponential and logistic growth curves with the log transformed y-axis, Log(N). 
