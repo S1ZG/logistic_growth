@@ -81,7 +81,7 @@ When estimating the population size at $`t`$ = 4980 min with the logistic model 
 
 
 ## Question 3
-As we are using the same parameters, I am visualising the exponential and logistic growth curves with the log transformed y-axis, Log(N). 
+As we are using the same parameters, I am visualising the exponential and logistic growth curves with the log transformed y-axis, Log(N). The R script can be found [here](https://github.com/S1ZG/logistic_growth/blob/main/q3_growth_curves.R).
 <p align="center">
 <img src="https://github.com/S1ZG/logistic_growth/blob/main/Q3_plot_4.png" width="754.6" height="709.8">
 </p>
