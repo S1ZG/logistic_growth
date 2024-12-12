@@ -59,7 +59,7 @@ Then assessed the fit of the model to the data graphically. Used the parameter e
 ## Question 2
 If I plug my estimates of $`N_0`$ and $`r`$ into the exponential growth equation $`N(t) = N_0 e^{rt}`$ for time $`t`$ = 4980, then we get $`N(4980) = (986.507)(e^{0.0100086*4980})=4.371×10^{24}`$.
 </p>
-Whereas if we use the logistic model equation 
+Whereas if we use the logistic model equation:
 
 ```math
 \begin{equation}
@@ -67,11 +67,11 @@ N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
 \end{equation}
 ```
 
-we get
+we get:
 
 ```math
 \begin{equation}
-N(4980) = \frac{(5.993e+10)(986.507)(e^{0.0100086*4980})}{(5.993e+10)-(986.507)+(986.507)(e^{0.0100086*4980})}
+N(4980) = \frac{(5.993×10^{10})(986.507)(e^{0.0100086*4980})}{(5.993×10^{10})-(986.507)+(986.507)(e^{0.0100086*4980})} = 5.993×10^{10}
 \end{equation}
 ```
 The population size from the exponential growth equation is much greater than that from the logistic model equation because the exponential growth equation assumes the rate of population growth remains constant over time, so the population increases indefinitely, while the logistic model includes carrying capacity, where the population stops increasing and plateaus because of resource limitations and competition. This is visualised in the next question.
