@@ -13,12 +13,12 @@ N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
 
 &nbsp;
 ## plot_data.R
-Started the analysis by plotting the data using the ‘ggplot2’ package. First, the data was plotted with $`N_0`$ (number of cells) on the y-axis and time on the x-axis. This plotted a graph that showed a population that appears to grow exponentially but then slows down once it reaches equilibrium. 
+Started the analysis by plotting the data using the ‘ggplot2’ package. First, the data was plotted with $`N`$ (number of cells) on the y-axis and time on the x-axis. This plotted a graph that showed a population that appears to grow exponentially but then slows down once it reaches equilibrium. 
 
 <p align="center">
 <img src="https://github.com/S1ZG/logistic_growth/blob/main/Q1_plot_1.png" width="754.6" height="709.8">
 </p>
-Next, the data was plotted as a semilog-plot with the x-axis remaining linear as time, but the y-axis log-transformed, Log10(N). This is a graphical representation of the logistic model, where we initially observe an increasing linear relationship at the start, then a plateau where population size remains constant. 
+Next, the data was plotted as a semilog-plot with the x-axis remaining linear as time, but the y-axis log-transformed, Log(N). This is a graphical representation of the logistic model, where we initially observe an increasing linear relationship at the start, then a plateau where population size remains constant. 
 <p align="center">
 <img src="https://github.com/S1ZG/logistic_growth/blob/main/Q1_plot_2.png" width="754.6" height="709.8">
 </p>
