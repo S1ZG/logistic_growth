@@ -11,16 +11,17 @@ N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
 \end{equation}
 ```
 
+
+
 &nbsp;
 ## plot_data.R
 Started the analysis by plotting the data using the ‘ggplot2’ package. First, the data was plotted with $`N`$ (number of cells) on the y-axis and time on the x-axis. This plotted a graph that showed a population that appears to grow exponentially but then slows down once it reaches equilibrium. 
 
-<p align="center">
-<img src="https://github.com/S1ZG/logistic_growth/blob/main/Q1_plot_1.png" width="754.6" height="709.8">
+![](https://github.com/S1ZG/logistic_growth/blob/main/Q1_plot_1.png) 
 </p>
 Next, the data was plotted as a semilog-plot with the x-axis remaining linear as time, but the y-axis log-transformed, Log(N). This is a graphical representation of the logistic model, where we initially observe an increasing linear relationship at the start, then a plateau where population size remains constant. 
-<p align="center">
-<img src="https://github.com/S1ZG/logistic_growth/blob/main/Q1_plot_2.png" width="754.6" height="709.8">
+
+![](https://github.com/S1ZG/logistic_growth/blob/main/Q1_plot_2.png)
 </p>
 
 ## fit_linear_model.R
@@ -52,8 +53,8 @@ $`K`$ = 5.993e+10
 
 ## plot_data_and_model.R
 Then assessed the fit of the model to the data graphically. Used the parameter estimates from the linear approximations to plot a logistic growth model which is the red curve. Assessed the fit of this to the growth data from ‘experiment.csv’ which is plotted in black dots. Can see that there is a very close fit between the model and the observed data, suggesting the parameter estimates are appropriate to use to describe this population of *E. coli*. 
-<p align="center">
-<img src="https://github.com/S1ZG/logistic_growth/blob/main/Q1_plot_3.png" width="754.6" height="709.8">
+
+![](https://github.com/S1ZG/logistic_growth/blob/main/Q1_plot_3.png)
 </p>
 
 ## Question 2
@@ -82,7 +83,7 @@ When estimating the population size at $`t`$ = 4980 min with the logistic model 
 
 ## Question 3
 As we are using the same parameters, I am visualising the exponential and logistic growth curves with the log transformed y-axis, Log(N). The R script can be found [here](https://github.com/S1ZG/logistic_growth/blob/main/q3_growth_curves.R).
-<p align="center">
-<img src="https://github.com/S1ZG/logistic_growth/blob/main/Q3_plot_4.png" width="754.6" height="709.8">
+
+![](https://github.com/S1ZG/logistic_growth/blob/main/Q3_plot_4.png)
 </p>
 Here we can see how the exponential model has continuous population growth, while the logistic model has the limitation of the carrying capacity for the bacteria, and therefore is a more appropriate model.
