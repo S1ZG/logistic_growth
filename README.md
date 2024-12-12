@@ -52,7 +52,33 @@ $`K`$ = 5.993e+10
 
 ### plot_data_and_model.R
 Then assessed the fit of the model to the data graphically. Used the parameter estimates from the linear approximations to plot a logistic growth model which is the red curve. Assessed the fit of this to the growth data from ‘experiment.csv’ which is plotted in black dots. Can see that there is a very close fit between the model and the observed data, suggesting the parameter estimates are appropriate to use to describe this population of *E. coli*. 
+<p align="center">
+<img src="https://github.com/S1ZG/logistic_growth/blob/main/Q1_plot_3.png" width="754.6" height="709.8">
+</p>
 
+## Question 2
+If I plug my estimates of $`N_0`$ and $`r`$ into the exponential growth equation $`N(t) = N_0 e^{rt}`$ for time $`t`$ = 4980, then we get $`N(4980) = (986.507)(e^{0.0100086*4980})=4.371×10^{24}`$.
+</p>
+Whereas if we use the logistic model equation 
 
+```math
+\begin{equation}
+N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
+\end{equation}
+```
 
+we get ((5.993e+10)(986.507)(e^(0.0100086*4980))/((5.993e+10)-(986.507)+(986.507)(e^(0.0100086*4980))=5.993×10¹⁰.
 
+```math
+\begin{equation}
+N(4980) = \frac{(5.993e+10)(986.507)(e^{0.0100086*4980})}{(5.993e+10)-(986.507)+(986.507)(e^{0.0100086*4980})}
+\end{equation}
+```
+The population size from the exponential growth equation is much greater than that from the logistic model equation because the exponential growth equation assumes the rate of population growth remains constant over time, so the population increases indefinitely, while the logistic model includes carrying capacity, where the population stops increasing and plateaus because of resource limitations and competition. This is visualised in the next question.
+
+## Question 3
+As we are using the same parameters, I am visualising the exponential and logistic growth curves with the log transformed y-axis, Log(N). 
+<p align="center">
+<img src="https://github.com/S1ZG/logistic_growth/blob/main/Q3_plot_4.png" width="754.6" height="709.8">
+</p>
+Here we can see how the exponential model has continuous population growth, while the logistic model has the limitation of the carrying capacity for the bacteria, and therefore is a more appropriate model.
